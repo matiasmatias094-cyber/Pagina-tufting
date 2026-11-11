@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Descubre Tufting para todos: productos y precios de tufting.">
+<title>Tufting para todos</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    animation: fondo 10s steps(1) infinite;
+    font-family: Arial, sans-serif;
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 20px;
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+h1 {
+    font-size: clamp(2.5rem, 8vw, 7.5rem);
+    font-weight: 900;
+    color: #ff9af5;
+    text-shadow: 5px 5px 10px #555;
+}
+img {
+    width: min(300px, 70vw);
+    height: min(300px, 70vw);
+    object-fit: contain;
+    border-radius: 15px;
+}
+.boton {
+    display: inline-block;
+    background: #a0008f;
+    color: white;
+    text-decoration: none;
+    padding: 22px 28px;
+    border-radius: 18px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 6px 15px #555;
+    transition: transform 0.3s, background-color 0.3s;
+    max-width: 220px;
+}
+.boton:hover { transform: scale(1.05); background: #720066; }
+.boton:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+@keyframes fondo {
+    0% { background: red; }
+    10% { background: orange; }
+    20% { background: yellow; }
+    30% { background: lime; }
+    40% { background: cyan; }
+    50% { background: blue; }
+    60% { background: purple; }
+    70% { background: magenta; }
+    80% { background: deeppink; }
+    90% { background: white; }
+    100% { background: red; }
+}
+@media (max-width: 750px) {
+    .contenedor { flex-direction: column; gap: 28px; }
+    .boton { max-width: 280px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+<main class="contenedor">
+    <section class="principal" aria-label="Tufting para todos">
+        <h1>TUFTING</h1>
+        <img src="botas.png" alt="Botas de tufting" onerror="this.hidden=true">
+        <h1>PARA TODOS</h1>
+    </section>
+    <a href="productos.html" class="boton">VER PRODUCTOS Y PRECIOS</a>
+</main>
+</body>
+</html>
